@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
 
   }
   ngOnInit(): void {
-      
+
   }
   searchResult:any;
   searchForm = new FormGroup({
@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
     this.service.getSearchMovie(this.searchForm.value).subscribe((result)=> {
       console.log(result,'searchmovie##');
       this.searchResult = result.results
-      
+
     })
   }
 }
